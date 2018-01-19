@@ -14,18 +14,14 @@ function nowServing(katzDeliLine) {
 }
 }
 
-function currentLine(line) {
-if (line.length === 0) {
+function currentLine(katzDeliLine) {
+if (katzDeliLine.length === 0) {
 return "The line is currently empty.";
 } else {
   var message = `The line is currently: `;
   for (var i = 0; i < katzDeliLine.length; i++) {
-    message += `${i + 1}. $katzDeliLine[i],`;
+    message += `${i+1}. $katzDeliLine[i], `;
   }
   return message.slice(0, message.length - 2);
-}
-}
-
-return "The line is currently: ${line.length + 1}, ${line.slice(1)}";
 }
 }
