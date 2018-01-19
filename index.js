@@ -1,7 +1,6 @@
 
 function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name);
-  while(katzDeliLine < 0) {
-  katzDeliLine.push("Welcome, ${name}. You are number ${number} in line")
+  return ("Welcome, ${name}. You are number ${katzDeliLine.length + 1} in line")
 }
-}
+
