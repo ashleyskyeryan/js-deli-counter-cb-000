@@ -20,7 +20,7 @@ return "The line is currently empty.";
 } else {
   var message = `The line is currently: `;
   for (var i = 0; i < katzDeliLine.length; i++) {
-    message += `${i+1}. $katzDeliLine[i], `;
+    message += `${i+1}. ${katzDeliLine[i]}, `;
   }
   return message.slice(0, message.length - 2);
 }
